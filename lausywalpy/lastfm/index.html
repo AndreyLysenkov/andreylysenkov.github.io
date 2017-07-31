@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+        <title>LausyWalpy - LastFm - authorization</title>
+    </head>
+    <body>
+        Now you need to DM bot <code id="apikey">if you see this message, then you disabled JavaScript... but that's ok, you need to copy the key in url of this page going after `apikey=` and add to it `!lastfm `, so you'll get smth like this: `!lastfm adfb849a5419`</code>
+        <script>
+            var path = window.location.href;
+            path = path.split("?")[1].split("=")[1];
+            document.getElementById("apikey").innerHTML = `!lastfm ${path}`;
+        </script>
+    </body>
+</html>
