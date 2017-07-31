@@ -1,11 +1,42 @@
 <!doctype html>
 <html>
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="../icon.png" />
+    <meta property="og:title" content="Lastfm scrubling with lausywalpybot" />
+    <meta property="og:description" content="Page on wich lastfm rederects you, when you authorize lausywalpy discord bot app"/>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
     <head>
         <title>LausyWalpy - LastFm - authorization</title>
     </head>
+    <style>
+        body {
+            background-image: url("../page_background.png");
+            color: #ccc;
+        }
+
+        #content {
+            position: fixed;
+            top: 20%;
+            left: 15%;
+            right: 15%;
+            padding: 5%;
+            font-family: Calibri;
+            font-size: 24pt;
+            background-image: url("../dialog_background.png");
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+        #apikey {
+            display: block;
+            color: #444;
+            background: #fff;
+        }
+    </style>
     <body>
         <div id="content">
-            <div id="text">Now DM bot this: </div>
+            <span id="text">Now DM bot this: </span>
             <code id="apikey"></code>
             <script>
                 var path = window.location.href;
