@@ -1,4 +1,5 @@
 body {
+    background-image: url("page_background.png");
     margin: 0px;
     padding: 0px;
 }
@@ -11,47 +12,43 @@ body {
     width: auto;
     padding: 0%;
     margin: 0px;
-    background-image: url("page_background.png");
 }
 
 #background div {
     display: block;
-    float: right;
+    float: left;
 }
 
-#background #logo {
-    width: 60%;
+#logo {
+    height: 100%;
+    width: 75%;
     padding: 2% 5%;
+    padding-right: 0px;
     text-align: center;
 }
 
-#background #logo img {
+#logo img {
     width: 90%;
     height: auto;
 }
 
 #content {
-    width: 60%;
+    width: 10%;
     text-align: center;
     color: #fff;
-    clear: left;
     padding: 2% 5%;
 }
 
 .button {
-    display: inline-block;
-    height: 50px;
-    padding: 10px;
+    display: block;
+    float: left;
+    width: 80%;
+    padding: 10%;
     background: #eee;
     box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
-    margin: 1%;
+    margin-bottom: 10%;
 }
 
 .button img {
-    height: 100%;
-}
-
-#discord {
-    width: 30%;
-    height: 100%;
+    width: 100%;
 }
