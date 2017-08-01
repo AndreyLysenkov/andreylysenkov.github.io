@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
+
+<head>
     <meta charset="UTF-8" />
     <meta property="og:image" content="https://andreylysenkov.github.io/lausywalpy/icon.png" />
     <meta property="og:title" content="Lastfm scrubling with lausywalpybot" />
-    <meta property="og:description" content="Page on wich lastfm rederects you, when you authorize lausywalpy discord bot app"/>
+    <meta property="og:description" content="Page on wich lastfm rederects you, when you authorize lausywalpy discord bot app"
+    />
     <link rel="shortcut icon" href="https://andreylysenkov.github.io/lausywalpy/icon.ico" type="image/x-icon" />
-    <head>
-        <title>LausyWalpy - LastFm - authorization</title>
-    </head>
+
+    <title>LausyWalpy - LastFm - authorization</title>
+
     <style>
         body {
             background-image: url("../page_background.png");
@@ -34,20 +37,23 @@
             background: #fff;
         }
     </style>
-    <body>
-        <div id="content">
-            <span id="text">Now DM bot this: </span>
-            <code id="apikey"></code>
-            <script>
-                var path = window.location.href;
-                path = path.split("?")[1].split("=")[1];
-                document.getElementById("apikey").innerHTML = `!lastfm ${path}`;
-                var local = {
-                    "ru" : "Теперь отправьте боту личное сообщение:"
-                }[navigator.language || navigator.userLanguage];
-                if (local)
-                    document.getElementById("text").innerHTML = local;
-            </script>
-        </div>
-    </body>
+</head>
+
+<body>
+    <div id="content">
+        <span id="text">Now DM bot this: </span>
+        <code id="apikey"></code>
+        <script>
+            var path = window.location.href;
+            path = path.split("?")[1].split("=")[1];
+            document.getElementById("apikey").innerHTML = `!lastfm ${path}`;
+            var local = {
+                "ru": "Теперь отправьте боту личное сообщение:"
+            }[navigator.language || navigator.userLanguage];
+            if (local)
+                document.getElementById("text").innerHTML = local;
+        </script>
+    </div>
+</body>
+
 </html>
