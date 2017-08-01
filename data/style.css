@@ -1,11 +1,12 @@
 body {
-    background: #444 url("page_background.jpg");
     margin: 0px;
     padding: 0px;
 }
 
 #background {
     position: fixed;
+    background: #444 url("page_background.jpg");
+    background-size: cover;
     left: 0px;
     right: 0px;
     height: 100%;
