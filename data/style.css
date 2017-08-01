@@ -1,31 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 #background {
     position: fixed;
-    top: 0px;
-    bottom: 0px;
     left: 0px;
     right: 0px;
-    background-image: url("page_background.jpg");
+    height: 100%;
+    width: auto;
+    padding: 0%;
+    margin: 0px;
+    background-image: url("page_background.png");
+}
+
+#background div {
+    display: block;
+    float: right;
 }
 
 #background #logo {
-    position: absolute;
-    top: 10%;
-    bottom: 50%;
-    left: 0px;
-    right: 0px;
+    width: 60%;
+    padding: 2% 5%;
     text-align: center;
 }
 
 #background #logo img {
-    width: auto;
-    height: 100%;
+    width: 90%;
+    height: auto;
 }
 
 #content {
-    position: fixed;
-    top: 50%;
-    left: 30%;
-    right: 30%;
+    width: 60%;
     text-align: center;
     color: #fff;
+    clear: left;
+    padding: 2% 5%;
+}
+
+.button {
+    display: inline-block;
+    height: 50px;
+    padding: 10px;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
+    margin: 1%;
+}
+
+.button img {
+    height: 100%;
+}
+
+#discord {
+    width: 30%;
+    height: 100%;
 }
