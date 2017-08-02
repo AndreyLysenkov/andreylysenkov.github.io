@@ -5,7 +5,7 @@ body {
 
 #background {
     position: fixed;
-    background: #444 url("page_background.jpg");
+    background: #111 url("page_background.jpg");
     background-size: cover;
     left: 0px;
     right: 0px;
