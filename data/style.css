@@ -1,18 +1,17 @@
 body {
+    background: #090909;
     margin: 0px;
     padding: 0px;
 }
 
 #background {
-    position: fixed;
-    background: #111 url("page_background.jpg");
-    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
     left: 0px;
-    right: 0px;
-    height: 100%;
-    width: auto;
-    padding: 0%;
-    margin: 0px;
+    right: 0px; 
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 #background div {
@@ -21,40 +20,35 @@ body {
 }
 
 #logo {
-    position: absolute;
-    height: 100%;
-    width: 71%;
-    left: 0px;
-    top: 0px;
-    padding: 2% 3%;
+    position: static;
+    height: 70%;
+    width: 100%;
+    padding-top: 1%; 
+    padding-bottom: 1%;
     text-align: center;
 }
 
 #logo img {
-    width: 100%;
-    height: auto;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%; 
 }
 
 #content {
-    position: absolute;
-    height: 100%;
-    width: 23%;
-    right: 0px;
-    top: 0px;
+    position: static;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     color: #fff;
-    padding: 2% 0%;
 }
 
 .button {
-    display: block;
-    float: left;
-    width: 30%;
-    padding: 5%;
+    display: inline-block;
+    width: 10%;
+    padding: 1%;
     background: #eee;
     box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
-    margin-bottom: 10%;
-    margin-right: 10%;
+    margin: 1%;
 }
 
 .button img {
