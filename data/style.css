@@ -44,23 +44,32 @@ body {
 
 .category,
 .label,
+.separator,
 .content {
-    display: block;
     width: 100%;
 }
 
 .category {
     display: block;
     clear: both;
-    background: #eee;
-    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
-    margin-top: 2%;
+    margin-top: 10%;
+    text-align: center;
 }
 
 .label {
-    padding: 1%;
+    display: inline-block;
+    padding: 1% 0;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
     color: #111;
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+.content {
+    display: inline-block;
+    margin-top: 0.3em;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
 }
 
 .button {
