@@ -21,17 +21,14 @@ body {
 
 #logo {
     position: static;
-    height: 70%;
-    width: 100%;
-    padding-top: 1%; 
-    padding-bottom: 1%;
+    height: 50%;
+    padding: 1% 25%;
     text-align: center;
 }
 
 #logo img {
     display: inline-block;
-    max-height: 100%;
-    max-width: 100%; 
+    width: 100%; 
 }
 
 #content {
@@ -81,4 +78,21 @@ body {
 
 .button img {
     width: 100%;
+}
+
+@media all and (orientation: portrait) {
+
+    #logo {
+        width: 90%;
+        height: auto;
+        padding: 5%;
+        text-align: center;
+    }
+
+    #content {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
 }
