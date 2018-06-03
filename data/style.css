@@ -36,18 +36,37 @@ body {
 
 #content {
     position: static;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
     text-align: center;
-    color: #fff;
+}
+
+.category,
+.label,
+.content {
+    display: block;
+    width: 100%;
+}
+
+.category {
+    display: block;
+    clear: both;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
+    margin-top: 2%;
+}
+
+.label {
+    padding: 1%;
+    color: #111;
+    font-size: 1.5em;
 }
 
 .button {
     display: inline-block;
     width: 10%;
     padding: 1%;
-    background: #eee;
-    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
     margin: 1%;
 }
 
