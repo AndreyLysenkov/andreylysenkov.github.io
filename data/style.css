@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: "ubuntu";
+    font-size: 1pc;
 }
 
 #background {
@@ -55,12 +57,27 @@ body {
 
 .label {
     display: inline-block;
-    padding: 1% 0;
+    padding: 1%;
+    width: 98%;
     background: #eee;
     box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
     color: #111;
-    font-size: 2em;
+    text-align: left;
+    font-size: 2pc;
     font-family: "ubuntu";
+}
+
+.label::before {
+    content: " > ";
+    font-size: 2pc;
+}
+
+.category:hover .label::after {
+    background-color: #111;
+    margin-left: 0.25pc;
+    content: "  ";
+    white-space: pre;
+    font-size: 2pc;
 }
 
 .content {
