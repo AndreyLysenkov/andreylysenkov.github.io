@@ -113,6 +113,30 @@ body {
     padding: 1%;
 }
 
+.button:hover {
+    background-color: #111;
+}
+
+.button:hover .title {
+    color: #eee;
+}
+
+.button:hover .title::before {
+    content: " > ./";
+    white-space: pre;
+}
+
+.button:hover .title::after {
+    content: "  ";
+    white-space: pre;
+    background-color: #eee;
+    margin-left: 0.25pc;
+}
+
+.button:hover img {
+    display: none;
+}
+
 #etc {
     width: 100%;
     padding: 1% 0;
