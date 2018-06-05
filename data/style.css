@@ -1,7 +1,8 @@
 body {
-    background: #090909;
     margin: 0px;
     padding: 0px;
+    font-family: "ubuntu";
+    font-size: 1pc;
 }
 
 #background {
@@ -10,6 +11,7 @@ body {
     bottom: 0px;
     left: 0px;
     right: 0px; 
+    background: #090909;
     overflow-x: hidden; 
     overflow-y: auto;
 }
@@ -21,36 +23,181 @@ body {
 
 #logo {
     position: static;
-    height: 70%;
-    width: 100%;
-    padding-top: 1%; 
-    padding-bottom: 1%;
+    height: 50%;
+    padding: 1% 25%;
     text-align: center;
 }
 
 #logo img {
     display: inline-block;
-    max-height: 100%;
-    max-width: 100%; 
+    width: 100%; 
 }
 
 #content {
     position: static;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
     text-align: center;
-    color: #fff;
+}
+
+.category,
+.label,
+.separator,
+.content {
+    width: 100%;
+}
+
+.category {
+    display: block;
+    clear: both;
+    width: 50%;
+    padding: 0% 25%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.label {
+    display: inline-block;
+    padding: 1%;
+    width: 98%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
+    color: #111;
+    text-align: left;
+    font-size: 2pc;
+    font-family: "ubuntu";
+}
+
+.label::before {
+    content: " > ";
+    font-size: 2pc;
+}
+
+.category:hover .label::after {
+    background-color: #111;
+    margin-left: 0.25pc;
+    content: "  ";
+    white-space: pre;
+    font-size: 2pc;
+}
+
+.content {
+    display: inline-block;
+    margin-top: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
+    text-align: left;
 }
 
 .button {
     display: inline-block;
-    width: 10%;
+    clear: both;
+    width: 96%;
     padding: 1%;
-    background: #eee;
-    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
     margin: 1%;
+    text-decoration: none;
+    font-size: 2pc;
+    font-family: "ubuntu";
+    color: #111;
 }
 
 .button img {
+    display: block;
+    float: left;
+    padding: 1%;
+    width: 2pc;
+}
+
+.title {
+    display: inline-block;
+    width: auto;
+    padding: 1%;
+}
+
+.button:hover {
+    background-color: #111;
+}
+
+.button:hover .title {
+    color: #eee;
+}
+
+.button:hover .title::before {
+    content: " > ./";
+    white-space: pre;
+}
+
+.button:hover .title::after {
+    content: "  ";
+    white-space: pre;
+    background-color: #eee;
+    margin-left: 0.25pc;
+}
+
+.button:hover img {
+    display: none;
+}
+
+#etc {
     width: 100%;
+    padding: 1% 0;
+    background-color: #111;
+}
+
+#etc .label {
+    background: inherit;
+    padding: 1% 25%;
+    width: 50%;
+    color: #eee;
+    box-shadow: none;
+}
+
+#etc .content {
+    background: inherit;
+    padding: 0% 25%;
+    width: 50%;
+    color: #eee;
+    box-shadow: none;
+}
+
+#etc.category:hover .label::after {
+    background-color: #eee;
+}
+
+#etc .button {
+    filter: invert(100%);
+}
+
+@media all and (orientation: portrait) {
+
+    #logo {
+        width: 90%;
+        height: auto;
+        padding: 5%;
+        text-align: center;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    .category {
+        width: 100%;
+        padding: 0;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #etc .label,
+    #etc .content {
+        width: 100%;
+        padding: 0 1%;
+    }
+
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ubuntu'), url(ubuntu.ttf);
 }

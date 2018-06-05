@@ -1,4 +1,1 @@
-# Andrey Lysenkov
-***aka allan_walpy aka allan_walpy#3408***
-
-[github](https://github.com/allan-walpy) | [gitlab](https://gitlab.com/AndreyLysenkov) | [vk](https://vk.com/walpy) | [donut](https://twitch.streamlabs.com/allan_walpy) | [discord server](https://discord.gg/ceNNu4d)
+# [walpy's page](https://allan-walpy.github.io/)
