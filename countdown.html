@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="walpy's page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://allan-walpy.github.io/data/logo.png" />
+    <meta property="og:url" content="https://allan-walpy.github.io/" />
+    <meta property="og:description" content="countdown of allan_walpy" />
+    <link rel="shortcut icon" href="data/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="data/style.css">
+    <title>allan_walpy's countdown</title>
+</head>
+
+<body style="background-color: #000;">
+    <div id="countdown" style="color: #fff; width: 100%; font-size: 7em; text-align: center; white-space: pre;"></div>
+    <script>
+        // thanks to https://www.w3schools.com/howto/howto_js_countdown.asp
+
+        var countDownDate = new Date("April 27, 2023 13:27:00").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${days}d\n${hours}h\n${minutes}m\n${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
