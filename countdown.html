@@ -24,12 +24,13 @@
             var now = new Date().getTime();
             var distance = countDownDate - now;
 
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var year = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+            var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("countdown").innerHTML = `${days}d\n${hours}h\n${minutes}m\n${seconds}s`;
+            document.getElementById("countdown").innerHTML = `${year}y\n${days}d\n${hours}h\n${minutes}m\n${seconds}s`;
 
             if (distance < 0) {
                 clearInterval(x);
