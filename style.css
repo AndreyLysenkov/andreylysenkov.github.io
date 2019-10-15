@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic,cyrillic-ext');
+
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "ubuntu";
+    font-family: "Noto Sans", sans-serif;
     font-size: 1pc;
 }
 
@@ -10,9 +12,9 @@ body {
     top: 0px;
     bottom: 0px;
     left: 0px;
-    right: 0px; 
-    background: #090909;
-    overflow-x: hidden; 
+    right: 0px;
+    background: #111;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -30,7 +32,7 @@ body {
 
 #logo img {
     display: inline-block;
-    width: 100%; 
+    width: 100%;
 }
 
 #content {
@@ -204,11 +206,4 @@ body {
         padding: 0 1%;
     }
 
-}
-
-@font-face {
-    font-family: 'ubuntu';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ubuntu'), url(ubuntu.ttf);
 }
