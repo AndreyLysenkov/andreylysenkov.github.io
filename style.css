@@ -2,9 +2,6 @@
 
 * {
     font-family: 'Roboto Mono', monospace;
-}
-
-body {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
@@ -77,7 +74,7 @@ body {
 
 .category:hover .label::after {
     background-color: #111;
-    margin-left: 0.25pc;
+    margin-left: 0.25em;
     content: " ";
     white-space: pre;
 }
@@ -97,15 +94,15 @@ body {
     padding: 1%;
     margin: 1%;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #111;
 }
 
 .button img {
     display: block;
     float: left;
-    padding: 1%;
-    width: 2pc;
+    padding: 0px;
+    height: 2em;
 }
 
 .title {
@@ -131,7 +128,7 @@ body {
     content: " ";
     white-space: pre;
     background-color: #eee;
-    margin-left: 0.25pc;
+    margin-left: 0.25em;
 }
 
 .button:hover img {
