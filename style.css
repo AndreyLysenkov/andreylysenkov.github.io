@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic,cyrillic-ext');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
 
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 1pc;
+    font-size: 1em;
 }
 
 #background {
@@ -65,21 +68,18 @@ body {
     box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
     color: #111;
     text-align: left;
-    font-size: 2pc;
-    font-family: "ubuntu";
+    font-size: 2em;
 }
 
 .label::before {
-    content: " > ";
-    font-size: 2pc;
+    content: "> ";
 }
 
 .category:hover .label::after {
     background-color: #111;
     margin-left: 0.25pc;
-    content: "  ";
+    content: " ";
     white-space: pre;
-    font-size: 2pc;
 }
 
 .content {
@@ -97,8 +97,7 @@ body {
     padding: 1%;
     margin: 1%;
     text-decoration: none;
-    font-size: 2pc;
-    font-family: "ubuntu";
+    font-size: 2em;
     color: #111;
 }
 
@@ -124,12 +123,12 @@ body {
 }
 
 .button:hover .title::before {
-    content: " > ./";
+    content: "> ./";
     white-space: pre;
 }
 
 .button:hover .title::after {
-    content: "  ";
+    content: " ";
     white-space: pre;
     background-color: #eee;
     margin-left: 0.25pc;
