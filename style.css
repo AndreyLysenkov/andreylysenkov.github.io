@@ -48,7 +48,6 @@ body div {
     width: 50%;
     padding: 0% 25%;
     margin-top: 5%;
-    text-align: center;
     font-size: 2em;
 }
 
@@ -163,7 +162,7 @@ body div {
     filter: invert(100%);
 }
 
-@media all and (max-width: 1360px) {
+@media all and (max-width: 1400px) {
 
     .category,
     #etc .label,
@@ -200,4 +199,48 @@ body div {
         padding: 0 1%;
     }
 
+}
+
+@media all and (min-width: 1500px) {
+
+    body {
+        filter: invert(100%);
+        background: #eee;
+    }
+
+    #logo {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding: 1%;
+        float: left;
+        width: 30%;
+    }
+
+    #content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .category {
+        display: block;
+        clear: both;
+        width: 60%;
+        padding: 0% 5%;
+        padding-left: 35%;
+        margin-top: 5%;
+    }
+
+    #etc .label {
+        padding-left: 35%;
+        width: 60%;
+    }
+
+    #etc .content {
+        padding-left: 35%;
+        width: 60%;
+    }
 }
