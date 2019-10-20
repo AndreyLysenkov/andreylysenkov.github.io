@@ -6,15 +6,8 @@
 
 body {
     background: #111;
-    overflow-x: auto;
-    overflow-y: auto;
     padding: 0px;
     margin: 0px;
-}
-
-body div {
-    display: block;
-    float: left;
 }
 
 #logo {
@@ -131,23 +124,17 @@ body div {
 }
 
 #etc {
-    width: 100%;
-    padding: 1% 0;
-    background-color: #181818;
+    background-color: #222;
 }
 
 #etc .label {
     background: inherit;
-    padding: 1% 25%;
-    width: 50%;
     color: #fff;
     box-shadow: none;
 }
 
 #etc .content {
     background: inherit;
-    padding: 1% 25%;
-    width: 50%;
     color: #fff;
     box-shadow: none;
 }
@@ -160,18 +147,7 @@ body div {
     filter: invert(100%);
 }
 
-@media all and (max-width: 1400px) {
-
-    .category,
-    #etc .label,
-    #etc .content {
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
-
-@media all and (orientation: portrait), all and (max-width: 850px) {
+@media (max-width: 900px) {
 
     #logo {
         padding: 5%;
@@ -179,64 +155,59 @@ body div {
     }
 
     #content {
-        padding: 0;
+        padding: 0px;
     }
 
     .category {
         width: 100%;
-        padding: 0;
-        margin-top: 5%;
-    }
-
-    #etc .label,
-    #etc .content {
-        width: 100%;
-        padding: 0 1%;
+        padding: 0px;
     }
 
 }
 
-@media all and (min-width: 1500px) {
+@media (min-width: 900px) and (max-width: 1600px) {
+
+    #etc {
+        width: 100%;
+        padding: 1% 0px;
+    }
+
+    #etc .label {
+        padding: 1% 25%;
+        width: 50%;
+    }
+
+    #etc .content {
+        padding: 1% 25%;
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1500px) {
 
     body {
+        margin: 0px;
+        padding: 0px;
         filter: invert(100%);
         background: #fff;
     }
 
     #logo {
-        position: absolute;
+        position: fixed;
         left: 0px;
         top: 0px;
         padding: 1%;
-        float: left;
+        padding-top: 5%;
         width: 30%;
         font-size: 5em;
     }
 
-    #content {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        text-align: center;
-    }
-
     .category {
-        display: block;
-        clear: both;
         width: 60%;
         padding: 0% 5%;
         padding-left: 35%;
         margin-top: 5%;
     }
 
-    #etc .label {
-        padding-left: 35%;
-        width: 60%;
-    }
-
-    #etc .content {
-        padding-left: 35%;
-        width: 60%;
-    }
 }
