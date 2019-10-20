@@ -29,7 +29,7 @@ body {
 .category,
 .label,
 .separator,
-.content {
+.list {
     width: 100%;
 }
 
@@ -67,7 +67,7 @@ body {
     white-space: pre;
 }
 
-.content {
+.list {
     display: inline-block;
     margin-top: 10px;
     background: #fff;
@@ -133,7 +133,7 @@ body {
     box-shadow: none;
 }
 
-#etc .content {
+#etc .list {
     background: inherit;
     color: #fff;
     box-shadow: none;
@@ -177,7 +177,7 @@ body {
         width: 50%;
     }
 
-    #etc .content {
+    #etc .list {
         padding: 1% 25%;
         width: 50%;
     }
