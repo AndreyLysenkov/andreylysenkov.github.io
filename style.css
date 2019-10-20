@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic,cyrillic-ext');
 
+@keyframes blink {
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
 * {
     font-family: 'Roboto Mono', monospace;
 }
@@ -10,26 +18,22 @@ body {
     margin: 0px;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #logo {
     position: static;
-    width: 70%;
-    padding: 1% 15%;
+    width: 60%;
+    padding: 1% 20%;
     font-size: 10em;
     text-align: center;
     color: #fff;
 }
 
-
 #content {
     position: static;
-    width: 100%;
-    text-align: center;
-}
-
-.category,
-.label,
-.separator,
-.list {
     width: 100%;
 }
 
@@ -37,55 +41,90 @@ body {
     display: block;
     clear: both;
     width: 50%;
-    padding: 0% 25%;
+    margin: 0px 25%;
     margin-top: 5%;
+    padding: 0px;
     font-size: 2em;
+    background: #222;
+    color: #fff;
+}
+
+.label,
+.item {
+    display: block;
+    clear: both;
+    padding: 2% 4%;
+    width: 92%;
 }
 
 .label {
-    display: inline-block;
-    padding: 1%;
-    width: 98%;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
-    color: #111;
-    text-align: left;
+    color: #48f;
 }
 
 .label::before {
-    content: "$ ";
+    content: "$ ls -al ";
+    color: #aaa;
+}
+
+.category:hover .label {
+    background: #000;
 }
 
 .category:hover .label::before {
-    content: "$ cd ./";
-}
-
-.category:hover .label::after {
-    background-color: #111;
-    margin-left: 0.25em;
-    content: " ";
-    white-space: pre;
+    content: "$ cd ";
+    color: #fff;
 }
 
 .list {
-    display: inline-block;
-    margin-top: 10px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
-    text-align: left;
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
-.button {
-    display: inline-block;
-    clear: both;
-    width: 96%;
-    padding: 1%;
-    margin: 1%;
-    text-decoration: none;
-    color: #111;
+.item img {
+    filter: invert(100%);
 }
 
-.button img {
+.item:hover {
+    background-color: #000;
+}
+
+.category:hover .label,
+.item:hover .title {
+    color: #4f4;
+}
+
+.title::before {
+    white-space: pre;
+    color: #fff;
+}
+
+.item:hover .title {
+    margin-left: -1.2em;
+}
+
+.item:hover .title::before {
+    content: "./";
+}
+
+.label:hover::after,
+.item:hover .title::after {
+    content: "_";
+    font-weight: bold;
+    animation-name: blink;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.item:hover img {
+    visibility: hidden;
+}
+
+.item img {
     display: block;
     float: left;
     height: 1.5em;
@@ -96,99 +135,49 @@ body {
 .title {
     display: inline-block;
     padding: 0.1em;
-    padding-left: 0.3em;
+    padding-left: 0.5em;
 }
 
-.button:hover {
-    background-color: #111;
+#etc.category {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.button:hover .title {
-    color: #fff;
-}
-
-.button:hover .title::before {
-    content: "> ./";
-    white-space: pre;
-}
-
-.button:hover .title::after {
-    content: " ";
-    white-space: pre;
-    background-color: #fff;
-    margin-left: 0.25em;
-}
-
-.button:hover img {
-    display: none;
-}
-
-#etc {
-    background-color: #222;
-}
-
-#etc .label {
-    background: inherit;
-    color: #fff;
-    box-shadow: none;
-}
-
-#etc .list {
-    background: inherit;
-    color: #fff;
-    box-shadow: none;
-}
-
-#etc.category:hover .label::after {
-    background-color: #fff;
-}
-
-#etc .button {
-    filter: invert(100%);
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     #logo {
         padding: 5%;
         width: 90%;
     }
 
-    #content {
-        padding: 0px;
-    }
-
     .category {
         width: 100%;
-        padding: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
 }
 
-@media (min-width: 900px) and (max-width: 1600px) {
+@media (min-width: 1001px) and (max-width: 1500px) {
 
     #etc {
         width: 100%;
-        padding: 1% 0px;
+        padding: 0px;
     }
 
-    #etc .label {
-        padding: 1% 25%;
-        width: 50%;
-    }
-
-    #etc .list {
-        padding: 1% 25%;
-        width: 50%;
+    #etc .label,
+    #etc .item {
+        margin: 0px 25%;
+        width: 46%;
+        padding: 1% 2%;
     }
 
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1501px) {
 
     body {
-        margin: 0px;
-        padding: 0px;
         filter: invert(100%);
         background: #fff;
     }
@@ -197,17 +186,39 @@ body {
         position: fixed;
         left: 0px;
         top: 0px;
+        width: 30%;
         padding: 1%;
         padding-top: 5%;
-        width: 30%;
         font-size: 5em;
+        color: #eee;
+    }
+
+    .category,
+    #etc .label,
+    #etc .item {
+        margin-left: 35%;
+        margin-right: 5%;
     }
 
     .category {
-        width: 60%;
-        padding: 0% 5%;
-        padding-left: 35%;
-        margin-top: 5%;
+        width: 50%;
+    }
+
+    #etc .label,
+    #etc .item {
+        padding: 1% 2%;
+        width: 46%;
+    }
+
+    .label {
+        /* inverted #48f; */
+        color: #b70;
+    }
+
+    .category:hover .label,
+    .item:hover .title {
+        /* inverted #4f4; */
+        color: #b0b;
     }
 
 }
