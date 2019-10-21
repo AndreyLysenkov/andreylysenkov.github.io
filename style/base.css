@@ -88,15 +88,15 @@ a {
 }
 
 .category:hover .item .title {
-    margin-left: -2.4em;
+    margin-left: -1.8em;
 }
 
 .category:hover .item .title::before {
-    content: "├─$ ";
+    content: "├─ ";
 }
 
 .category:hover .item:last-child .title::before {
-    content: "└─$ ";
+    content: "└─ ";
 }
 
 .label:hover::after,
