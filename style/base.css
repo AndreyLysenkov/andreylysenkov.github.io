@@ -1,15 +1,3 @@
-@keyframes blink {
-
-    100% {
-        opacity: 0;
-    }
-
-}
-
-* {
-    font-family: 'Roboto Mono', monospace;
-}
-
 body {
     background: #0e0e0e;
     padding: 0px;
@@ -111,12 +99,6 @@ a {
     content: "_";
     color: #eee;
     font-weight: bold;
-    animation-name: blink;
-    animation-duration: 400ms;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .item:hover img {

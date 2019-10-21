@@ -2,8 +2,14 @@
 
 @import "base.css";
 
+@import "animation.css";
+
 @import "width.min.css" (max-width: 1000px);
 
 @import "width.medium.css" (min-width: 1001px) and (max-width: 1500px);
 
 @import "width.max.css" (min-width: 1501px);
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
