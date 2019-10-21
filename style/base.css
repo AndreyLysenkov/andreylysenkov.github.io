@@ -52,7 +52,8 @@ a {
     color: #999;
 }
 
-.category:hover .label {
+.category:hover .label,
+.category:hover .item {
     background: #0e0e0e;
 }
 
@@ -86,12 +87,16 @@ a {
     color: #eee;
 }
 
-.item:hover .title {
-    margin-left: -1.2em;
+.category:hover .item .title {
+    margin-left: -2.4em;
 }
 
-.item:hover .title::before {
-    content: "$ ";
+.category:hover .item .title::before {
+    content: "├─$ ";
+}
+
+.category:hover .item:last-child .title::before {
+    content: "└─$ ";
 }
 
 .label:hover::after,
@@ -101,7 +106,7 @@ a {
     font-weight: bold;
 }
 
-.item:hover img {
+.category:hover .item img {
     visibility: hidden;
 }
 
