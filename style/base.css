@@ -53,7 +53,7 @@ a {
 }
 
 .category:hover .label,
-.category:hover .item {
+.category .item:hover {
     background: #0e0e0e;
 }
 
@@ -78,7 +78,7 @@ a {
 }
 
 .category:hover .label,
-.item:hover .title {
+.category .item:hover .title {
     color: #4f4;
 }
 
@@ -87,26 +87,22 @@ a {
     color: #eee;
 }
 
-.category:hover .item .title {
-    margin-left: -1.8em;
+.category .item:hover .title {
+    margin-left: -1.2em;
 }
 
-.category:hover .item .title::before {
-    content: "├─ ";
+.item:hover .title::before {
+    content: "$ ";
 }
 
-.category:hover .item:last-child .title::before {
-    content: "└─ ";
-}
-
-.label:hover::after,
+.category .label:hover::after,
 .item:hover .title::after {
     content: "_";
     color: #eee;
     font-weight: bold;
 }
 
-.category:hover .item img {
+.category .item:hover img {
     visibility: hidden;
 }
 
