@@ -87,11 +87,11 @@ a {
 }
 
 .item:hover .title {
-    margin-left: -2.4em;
+    margin-left: -1.2em;
 }
 
 .item:hover .title::before {
-    content: "cat ";
+    content: "$ ";
 }
 
 .label:hover::after,
