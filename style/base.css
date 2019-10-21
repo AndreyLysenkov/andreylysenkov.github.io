@@ -4,11 +4,6 @@ body {
     margin: 0px;
 }
 
-a {
-    color: #eee;
-    text-decoration: none;
-}
-
 #logo {
     position: static;
     width: 60%;
@@ -59,13 +54,9 @@ a {
     padding: 0px;
 }
 
-.item img {
-    filter: invert(100%);
-}
-
-.title::before {
-    white-space: pre;
+.list a {
     color: #eee;
+    text-decoration: none;
 }
 
 .item img {
@@ -74,6 +65,7 @@ a {
     height: 1.5em;
     width: auto;
     object-fit: contain;
+    filter: invert(100%);
 }
 
 .title {
@@ -82,7 +74,12 @@ a {
     padding-left: 0.5em;
 }
 
-#etc.category {
+.title::before {
+    white-space: pre;
+    color: #eee;
+}
+
+#etc {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
