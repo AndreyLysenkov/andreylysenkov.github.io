@@ -2,6 +2,8 @@
 
 @import "base.css";
 
+@import "hover.css";
+
 @import "animation.css";
 
 @import "width.min.css" (max-width: 1000px);
