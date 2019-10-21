@@ -1,0 +1,29 @@
+.category:hover .label,
+.item:hover {
+    background: #0e0e0e;
+    color: #4f4;
+}
+
+.category:hover .label::before {
+    content: "$ cd ";
+    color: #eee;
+}
+
+.item:hover .title {
+    margin-left: -1.2em;
+}
+
+.item:hover .title::before {
+    content: "$ ";
+}
+
+.item:hover img {
+    visibility: hidden;
+}
+
+.label:hover::after,
+.item:hover .title::after {
+    content: "_";
+    color: #eee;
+    font-weight: bold;
+}
