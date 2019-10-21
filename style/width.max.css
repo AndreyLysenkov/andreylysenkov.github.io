@@ -1,8 +1,3 @@
-body {
-    filter: invert(100%);
-    background: #eee;
-}
-
 #logo,
 #content
 {
@@ -37,15 +32,4 @@ body {
 #etc .item {
     padding: 1% 2%;
     width: 46%;
-}
-
-.label {
-    /* inverted #48f; */
-    color: #b70;
-}
-
-.category:hover .label,
-.item:hover .title {
-    /* inverted #4f4; */
-    color: #b0b;
 }
