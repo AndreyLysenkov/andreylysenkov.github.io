@@ -1,0 +1,51 @@
+body {
+    filter: invert(100%);
+    background: #eee;
+}
+
+#logo,
+#content
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#logo {
+    width: 30%;
+    padding: 5%;
+    font-size: 5em;
+    color: #eee;
+}
+
+#content {
+    right: 0px;
+}
+
+.category,
+#etc .label,
+#etc .item {
+    margin-left: 40%;
+    margin-right: 5%;
+}
+
+.category {
+    width: 50%;
+}
+
+#etc .label,
+#etc .item {
+    padding: 1% 2%;
+    width: 46%;
+}
+
+.label {
+    /* inverted #48f; */
+    color: #b70;
+}
+
+.category:hover .label,
+.item:hover .title {
+    /* inverted #4f4; */
+    color: #b0b;
+}

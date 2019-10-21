@@ -146,87 +146,18 @@ a {
 
 @media (max-width: 1000px) {
 
-    #logo {
-        padding: 5%;
-        width: 90%;
-    }
-
-    .category {
-        width: 100%;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
+    @import url("width.min.css");
 
 }
 
 @media (min-width: 1001px) and (max-width: 1500px) {
 
-    #etc {
-        width: 100%;
-        padding: 0px;
-    }
-
-    #etc .label,
-    #etc .item {
-        margin: 0px 20%;
-        width: 56%;
-        padding: 1% 2%;
-    }
+    @import url("width.medium.css");
 
 }
 
 @media (min-width: 1501px) {
 
-    body {
-        filter: invert(100%);
-        background: #eee;
-    }
-
-    #logo,
-    #content
-    {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
-    #logo {
-        width: 30%;
-        padding: 5%;
-        font-size: 5em;
-        color: #eee;
-    }
-
-    #content {
-        right: 0px;
-    }
-
-    .category,
-    #etc .label,
-    #etc .item {
-        margin-left: 40%;
-        margin-right: 5%;
-    }
-
-    .category {
-        width: 50%;
-    }
-
-    #etc .label,
-    #etc .item {
-        padding: 1% 2%;
-        width: 46%;
-    }
-
-    .label {
-        /* inverted #48f; */
-        color: #b70;
-    }
-
-    .category:hover .label,
-    .item:hover .title {
-        /* inverted #4f4; */
-        color: #b0b;
-    }
+    @import url("width.max.css");
 
 }
