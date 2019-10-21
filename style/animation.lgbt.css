@@ -1,0 +1,37 @@
+@keyframes lgbt {
+
+    0% {
+        background-color: #ff0018;
+    }
+
+    20% {
+        background-color: #ffa52c;
+    }
+
+    40% {
+        background-color: #ffff41;
+    }
+
+    60% {
+        background-color: #008018;
+    }
+
+    80% {
+        background-color: #0000f9;
+    }
+
+    100% {
+        background-color: #86007d;
+        color: #0e0e0e;
+    }
+
+}
+
+#logo:hover {
+    animation-name: lgbt;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 27s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
