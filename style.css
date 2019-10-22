@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic,cyrillic-ext");
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* base; */
+
+body {
+    background: #0e0e0e;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo {
+    position: static;
+    width: 60%;
+    padding: 1% 20%;
+    font-size: 7em;
+    text-align: center;
+    color: #eee;
+}
+
+#content {
+    position: static;
+    width: 100%;
+}
+
+.category {
+    display: block;
+    clear: both;
+    width: 60%;
+    margin: 0px 20%;
+    margin-top: 5%;
+    padding: 0px;
+    background: #222;
+    color: #eee;
+}
+
+.label,
+.item {
+    display: block;
+    clear: both;
+    padding: 2% 4%;
+    width: 92%;
+}
+
+.label {
+    font-size: 2em;
+    color: #48f;
+}
+
+.label::before {
+    content: "$ ls -al ";
+    color: #999;
+}
+
+.list {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.item {
+    font-size: 2em;
+}
+
+.item img {
+    display: block;
+    float: left;
+    height: 1.5em;
+    width: auto;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
+.title {
+    display: inline-block;
+    padding: 0.1em;
+    padding-left: 0.5em;
+}
+
+.title::before {
+    white-space: pre;
+    color: #eee;
+}
+
+#etc {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* hover; */
+
+.category:hover .label,
+.item:hover {
+    background: #0e0e0e;
+    color: #4f4;
+}
+
+.category:hover .label::before {
+    content: "$ cd ";
+    color: #eee;
+}
+
+.item:hover .title {
+    margin-left: -1.2em;
+}
+
+.item:hover .title::before {
+    content: "$ ";
+}
+
+.item:hover img {
+    visibility: hidden;
+}
+
+.label:hover::after,
+.item:hover .title::after {
+    content: "_";
+    color: #eee;
+    font-weight: bold;
+}
+
+/* animation;blink; */
+
+@keyframes blink {
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.label:hover::after,
+.item:hover .title::after {
+    animation-name: blink;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* animation;lgbt; */
+
+@keyframes lgbt {
+
+    0% {
+        background-color: #ff0018;
+    }
+
+    20% {
+        background-color: #ffa52c;
+    }
+
+    40% {
+        background-color: #ffff41;
+    }
+
+    60% {
+        background-color: #008018;
+    }
+
+    80% {
+        background-color: #0000f9;
+    }
+
+    100% {
+        background-color: #86007d;
+        color: #0e0e0e;
+    }
+
+}
+
+#logo:hover {
+    animation-name: lgbt;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 27s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* width;min; */
+
+@media (max-width: 1000px) {
+
+    body {
+        min-width: 36em;
+    }
+
+    #logo {
+        padding: 5%;
+        width: 90%;
+    }
+
+    .category {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+/* width.medium; */
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+
+    #etc {
+        padding: 0px;
+    }
+
+    #etc .label,
+    #etc .item {
+        margin: 0px 20%;
+        width: 56%;
+        padding: 1% 2%;
+    }
+
+}
+
+/* width.max; */
+
+@media (min-width: 1501px) {
+
+    #logo,
+    #content
+    {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    #logo {
+        width: 30%;
+        padding: 5%;
+        color: #eee;
+    }
+
+    #content {
+        right: 0px;
+    }
+
+    .category,
+    #etc .label,
+    #etc .item {
+        margin-left: 40%;
+        margin-right: 5%;
+    }
+
+    .category {
+        width: 50%;
+    }
+
+    #etc .label,
+    #etc .item {
+        padding: 1% 2%;
+        width: 46%;
+    }
+
+}
