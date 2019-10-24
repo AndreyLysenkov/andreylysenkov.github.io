@@ -10,7 +10,7 @@ markdownlint:
   stage: lint
   script:
     - npm install -g markdownlint-cli
-    - markdownlint '**/*.md'
+    - markdownlint "**/*.md"
 
 csslint:
   stage: lint
