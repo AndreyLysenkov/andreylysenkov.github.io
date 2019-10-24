@@ -8,7 +8,8 @@ variables:
 stages:
   - lint
 
-testlint:
+markdownlint:
   stage: lint
   script:
-    - echo "test lint"
+    - npm install -g markdownlint-cli
+    - markdownlint '*.md'
