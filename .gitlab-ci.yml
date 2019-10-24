@@ -8,10 +8,6 @@ variables:
 stages:
   - lint
 
-default:
-  before_script:
-    - npm --version
-
 testlint:
   stage: lint
   script:
