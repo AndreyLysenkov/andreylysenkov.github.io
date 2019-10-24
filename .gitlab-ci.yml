@@ -10,7 +10,6 @@ stages:
 
 default:
   before_script:
-    - PATH=$PATH:/home/node/.npm-global/bin
     - npm --version
 
 testlint:
