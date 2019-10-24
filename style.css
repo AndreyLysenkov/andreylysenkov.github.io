@@ -116,13 +116,6 @@ section:hover .label::before {
     visibility: hidden;
 }
 
-.label:hover::after,
-.item:hover .title::after {
-    content: "_";
-    color: #eee;
-    font-weight: bold;
-}
-
 /* animation;blink; */
 
 @keyframes blink {
@@ -133,6 +126,9 @@ section:hover .label::before {
 
 .label:hover::after,
 .item:hover .title::after {
+    content: "_";
+    color: #eee;
+    font-weight: bold;
     animation-name: blink;
     animation-duration: 400ms;
     animation-timing-function: ease-in-out;
