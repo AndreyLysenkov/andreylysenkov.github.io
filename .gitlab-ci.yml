@@ -15,11 +15,11 @@ markdownlint:
 csslint:
   stage: lint
   script:
-    - npm install stylelint --save-dev
+    - npm install -g stylelint --save-dev
     - stylelint "**/*.css"
 
 htmllint:
   stage: lint
   script:
-    - npm install htmlhint --save-dev
+    - npm install -g htmlhint --save-dev
     - htmlhint "**/*.html"
