@@ -5,3 +5,5 @@ or
 [walpy.cf](https://walpy.cf/);
 
 [license](./license.md)
+
+- [markdownlint configuration](./markdownlint.conf);
