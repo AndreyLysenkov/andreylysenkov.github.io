@@ -1,3 +1,7 @@
 # walpy's page
 
-[see here](https://allan-walpy.github.io/)
+[allan-walpy.github.io](https://allan-walpy.github.io/)
+or
+[walpy.cf](https://walpy.cf/);
+
+[license](./license.md)
