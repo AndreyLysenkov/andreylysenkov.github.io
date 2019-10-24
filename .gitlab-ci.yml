@@ -1,9 +1,7 @@
 default:
   image: node:current-alpine
-
-variables:
-  GIT_STRATEGY: fetch
-  GIT_SUBMODULE_STRATEGY: none
+  before_script:
+    - PATH=$PATH:/home/node/.npm-global/bin
 
 stages:
   - lint
