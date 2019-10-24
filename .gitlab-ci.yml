@@ -10,7 +10,7 @@ stages:
 
 default:
   before_script:
-    - ENV PATH=$PATH:/home/node/.npm-global/bin
+    - PATH=$PATH:/home/node/.npm-global/bin
     - node --version
     - npm --version
 
