@@ -16,7 +16,7 @@ csslint:
   stage: lint
   script:
     - npm install -g stylelint --save-dev
-    - wget https://github.wcom/stylelint/stylelint-config-standard/blob/master/index.js -o .stylelintrc.js
+    - wget -O .stylelintrc.js https://raw.githubusercontent.com/stylelint/stylelint-config-standard/master/index.js
     - stylelint "**/*.css"
 
 htmllint:
