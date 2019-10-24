@@ -1,10 +1,10 @@
-# mit License
+# licensing & copyright notices
 
-[see license text here](./license);
+## main
 
-## third party resources
+[mit license](./license);
 
-### ant-design
+## ant-design
 
 author: `HeskeyBaozi`;
 
@@ -16,7 +16,7 @@ license: `MIT`;
 
 > [ant-design-icons repository](https://github.com/ant-design/ant-design-icons/);
 
-### twiter
+## twiter
 
 author: `Twitter`;
 
@@ -28,7 +28,7 @@ license: `CC BY 4.0`;
 
 > [twemoji repository](https://github.com/twitter/twemoji/);
 
-### keyamoon
+## keyamoon
 
 author: `Keyamoon`;
 
@@ -39,7 +39,7 @@ license: `GPL`;
 
 > [icomoon-free repository](https://github.com/Keyamoon/IcoMoon-Free/);
 
-### entypo
+## entypo
 
 author: `Daniel Bruce`;
 
@@ -50,7 +50,7 @@ license: `CC BY-SA 4.0`;
 
 > [entypo site](http://entypo.com/);
 
-### fontawesome
+## fontawesome
 
 author: `Dave Gandy`;
 
@@ -61,7 +61,7 @@ license: `CC BY 4.0`;
 
 > [fontawesome site](https://fontawesome.com/);
 
-### cryptocurrebcy icons
+## cryptocurrebcy icons
 
 author: `Christopher Downer`;
 
@@ -71,7 +71,7 @@ license: `CC0 1.0`;
 
 > [cryptocurrency-icons repository](https://github.com/atomiclabs/cryptocurrency-icons/);
 
-### feather
+## feather
 
 author: `Cole Bemis`;
 
@@ -81,7 +81,7 @@ license: `MIT`;
 
 > [feather repository](https://github.com/feathericons/feather/);
 
-### elusiveicons
+## elusiveicons
 
 author: `Team Redux`;
 
@@ -91,7 +91,7 @@ license: `Open Font License`;
 
 > [elusiveicons site](http://elusiveicons.com/);
 
-### brandico font
+## brandico font
 
 author: `Fontello`;
 
@@ -101,17 +101,17 @@ license: `CC BY SA`;
 
 > [brandico.font repository](https://github.com/fontello/brandico.font/)
 
-### ionicons
+## ionicons
 
 author: `Ben Sperry`;
 
 license: `MIT`;
 
-- application icon; or version i
+- application icon; or version icon;
 
 > [ionicons repository](https://github.com/ionic-team/ionicons/)
 
-### fxemoji
+## fxemoji
 
 author: `Mozilla`;
 
@@ -121,7 +121,7 @@ license: `Apache 2.0`;
 
 > [fxemoji repository](https://github.com/mozilla/fxemoji/);
 
-### smarticons glyth
+## smarticons glyth
 
 author: `SmartIcons`;
 
