@@ -6,8 +6,8 @@
 
 body {
     background: #0e0e0e;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -28,9 +28,9 @@ section {
     display: block;
     clear: both;
     width: 60%;
-    margin: 0px 20%;
+    margin: 0 20%;
     margin-top: 5%;
-    padding: 0px;
+    padding: 0;
     background: #222;
     color: #eee;
 }
@@ -56,8 +56,8 @@ section {
 .list {
     display: block;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .list a {
@@ -87,8 +87,8 @@ section {
 
 section:last-child {
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* hover; */
@@ -181,7 +181,7 @@ header:hover {
 
 /* width;min; */
 
-@media (max-width: 1000px) {
+@media (max-width: 1000) {
     body {
         min-width: 36em;
     }
@@ -193,21 +193,21 @@ header:hover {
 
     section {
         width: 100%;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 
 /* width.medium; */
 
-@media (min-width: 1001px) and (max-width: 1500px) {
+@media (min-width: 1001px) and (max-width: 1500) {
     section:last-child {
-        padding: 0px;
+        padding: 0;
     }
 
     section:last-child .label,
     section:last-child .item {
-        margin: 0px 20%;
+        margin: 0 20%;
         width: 56%;
         padding: 1% 2%;
     }
@@ -219,8 +219,8 @@ header:hover {
     header,
     main {
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
 
     header {
@@ -230,7 +230,7 @@ header:hover {
     }
 
     main {
-        right: 0px;
+        right: 0;
     }
 
     section,
