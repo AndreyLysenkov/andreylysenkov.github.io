@@ -19,3 +19,9 @@ csslint:
   script:
     - npm install stylelint --save-dev
     - stylelint "**/*.css"
+
+htmllint:
+  stage: lint
+  script:
+    - npm install htmlhint --save-dev
+    - htmlhint "**/*.html"
