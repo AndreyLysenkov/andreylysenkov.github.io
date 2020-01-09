@@ -103,8 +103,7 @@ section:last-child .item {
 /* hover; */
 
 .item:hover,
-section:hover .label
-{
+section:hover .label {
     background: #0e0e0e;
     color: #4f4;
 }
