@@ -112,7 +112,7 @@ section:hover .label::before {
 }
 
 .item:hover .title {
-    margin-left: -1.2em;
+    margin-left: -1.1em;
 }
 
 .item:hover .title::before {
