@@ -86,6 +86,12 @@ section {
     color: #eee;
 }
 
+.item:hover,
+section:hover .label {
+    background: #0e0e0e;
+    color: #4f4;
+}
+
 section:last-child {
     width: 100%;
     padding: 0;
@@ -98,14 +104,6 @@ section:last-child .item {
     margin: 0 10%;
     width: 76%;
     padding: 1% 2%;
-}
-
-/* hover; */
-
-.item:hover,
-section:hover .label {
-    background: #0e0e0e;
-    color: #4f4;
 }
 
 section:hover .label::before {
