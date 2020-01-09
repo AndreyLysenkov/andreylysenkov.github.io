@@ -88,7 +88,7 @@ section {
 
 section:last-child {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     margin-left: 0;
     margin-right: 0;
 }
@@ -102,8 +102,9 @@ section:last-child .item {
 
 /* hover; */
 
-section:hover .label,
-.item:hover {
+.item:hover,
+section:hover .label
+{
     background: #0e0e0e;
     color: #4f4;
 }
