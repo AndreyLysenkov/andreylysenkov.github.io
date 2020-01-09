@@ -13,9 +13,9 @@ body {
 
 header {
     position: static;
-    width: 60%;
-    padding: 1% 20%;
-    font-size: 7em;
+    width: 80%;
+    padding: 1% 10%;
+    font-size: 72pt;
     text-align: center;
     color: #eee;
 }
@@ -42,7 +42,7 @@ section {
     clear: both;
     padding: 2% 4%;
     width: 92%;
-    font-size: 2em;
+    font-size: 16pt;
 }
 
 .label {
