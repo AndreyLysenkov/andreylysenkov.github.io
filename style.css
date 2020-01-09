@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Consolas', 'Roboto Mono', monospace;
 }
 
 /* base; */
@@ -28,8 +28,8 @@ main {
 section {
     display: block;
     clear: both;
-    width: 60%;
-    margin: 0 20%;
+    width: 80%;
+    margin: 0 10%;
     margin-top: 5%;
     padding: 0;
     background: #222;
@@ -95,8 +95,8 @@ section:last-child {
 
 section:last-child .label,
 section:last-child .item {
-    margin: 0 20%;
-    width: 56%;
+    margin: 0 10%;
+    width: 76%;
     padding: 1% 2%;
 }
 
